@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavigationView" customModule="Checklist" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="FTw-68-vVo"/>
+                <outlet property="leftStackView" destination="pPg-Ct-dUW" id="Ooi-ec-gDZ"/>
+                <outlet property="navBarLabel" destination="q4U-3x-nAf" id="0El-CR-EBD"/>
+                <outlet property="rightStackView" destination="trL-6Q-ZH4" id="Omf-h7-KT8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pPg-Ct-dUW">
+                    <rect key="frame" x="10" y="30" width="24" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="1ew-jR-rmX"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" id="rd1-XV-aAf"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="trL-6Q-ZH4">
+                    <rect key="frame" x="340" y="30" width="25" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="9KU-0R-8DR"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" id="Psn-48-fKt"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4U-3x-nAf">
+                    <rect key="frame" x="187.5" y="50" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.63921568627450975" green="0.21568627450980393" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pPg-Ct-dUW" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" priority="750" id="FrJ-jw-iJL"/>
+                <constraint firstAttribute="bottom" secondItem="trL-6Q-ZH4" secondAttribute="bottom" constant="10" id="Io9-1U-tev"/>
+                <constraint firstItem="q4U-3x-nAf" firstAttribute="bottom" secondItem="pPg-Ct-dUW" secondAttribute="bottom" id="Jh4-QG-jjX"/>
+                <constraint firstItem="q4U-3x-nAf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="O2H-MH-rps"/>
+                <constraint firstItem="trL-6Q-ZH4" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" priority="750" id="bBO-Fh-gEx"/>
+                <constraint firstItem="pPg-Ct-dUW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="p4i-YC-doy"/>
+                <constraint firstAttribute="bottom" secondItem="pPg-Ct-dUW" secondAttribute="bottom" constant="10" id="rdN-JP-z87"/>
+                <constraint firstItem="trL-6Q-ZH4" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-10" id="zj0-kf-0y3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="35.5" y="360"/>
+        </view>
+    </objects>
+</document>
